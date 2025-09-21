@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.memestreamproto.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.memestreamproto.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.memestreamproto.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.example.memestreamproto.ui.FeedFragment"
+        android:label="fragment_feed_list"
+        tools:layout="@layout/fragment_feed_list" />
+
+    <fragment
+        android:id="@+id/createMemeFragment"
+        android:name="com.example.memestreamproto.ui.CreateMemeFragment"
+        android:label="fragment_create_meme"
+        tools:layout="@layout/fragment_create_meme" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.memestreamproto.ui.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.example.memestreamproto.ui.profile.ProfilePageFragment"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" />
+</navigation>

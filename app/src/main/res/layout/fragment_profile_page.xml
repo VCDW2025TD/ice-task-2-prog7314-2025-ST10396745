@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfilePageFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="141dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="138dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="184dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbEditProfile"
+        android:layout_width="358dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="29dp"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="start|center_vertical"
+        android:text="Edit Profile"
+        android:textColor="@color/black"
+        app:icon="@drawable/baseline_account_circle_24"
+        app:iconGravity="start"
+        app:iconPadding="20dp"
+        app:iconSize="25dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+        app:rippleColor="?attr/colorControlHighlight"
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbDataPrivacy"
+        android:layout_width="358dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="29dp"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="start|center_vertical"
+        android:text="Data and Privacy"
+        android:textColor="@color/black"
+        app:icon="@drawable/baseline_security_24"
+        app:iconGravity="start"
+        app:iconPadding="20dp"
+        app:iconSize="25dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mbEditProfile"
+        app:rippleColor="?attr/colorControlHighlight"
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbChangePassword"
+        android:layout_width="358dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="29dp"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="start|center_vertical"
+        android:text="Change Password"
+        android:textColor="@color/black"
+        app:icon="@drawable/baseline_lock_24"
+        app:iconGravity="start"
+        app:iconPadding="20dp"
+        app:iconSize="25dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mbDataPrivacy"
+        app:rippleColor="?attr/colorControlHighlight"
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbSettings"
+        android:layout_width="358dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="29dp"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="start|center_vertical"
+        android:text="Settings"
+        android:textColor="@color/black"
+        app:icon="@drawable/baseline_settings_24"
+        app:iconGravity="start"
+        app:iconPadding="20dp"
+        app:iconSize="25dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mbChangePassword"
+        app:rippleColor="?attr/colorControlHighlight"
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbLogout"
+        android:layout_width="176dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="119dp"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="start|center_vertical"
+        android:text="Log Out"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:icon="@drawable/baseline_logout_24"
+        app:iconGravity="start"
+        app:iconPadding="20dp"
+        app:iconSize="25dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mbSettings"
+        app:rippleColor="?attr/colorControlHighlight"
+        app:strokeColor="@android:color/transparent"
+        app:strokeWidth="0dp" />
+
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@+id/mbEditProfile"
+        app:layout_constraintEnd_toEndOf="@+id/mbEditProfile"
+        app:layout_constraintTop_toTopOf="@+id/mbEditProfile" />
+
+    <ImageView
+        android:id="@+id/ivArrowChangePassword"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@+id/mbChangePassword"
+        app:layout_constraintEnd_toEndOf="@+id/mbChangePassword"
+        app:layout_constraintTop_toTopOf="@+id/mbChangePassword" />
+
+    <ImageView
+        android:id="@+id/ivArrowDataPriv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@+id/mbDataPrivacy"
+        app:layout_constraintEnd_toEndOf="@+id/mbDataPrivacy"
+        app:layout_constraintTop_toTopOf="@+id/mbDataPrivacy" />
+
+
+    <ImageView
+        android:id="@+id/ivArrowSettings"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@+id/mbSettings"
+        app:layout_constraintEnd_toEndOf="@+id/mbSettings"
+        app:layout_constraintTop_toTopOf="@+id/mbSettings" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
